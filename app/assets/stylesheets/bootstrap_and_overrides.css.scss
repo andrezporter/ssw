@@ -1,0 +1,164 @@
+@import "bootstrap";
+@import "bootstrap-variables.scss";
+@import "bootstrap-sprockets.scss";
+@import "bootstrap.scss";
+
+/*******************************************/
+/*Default*/
+/*******************************************/
+
+	/***********************/
+	/*NavBar*/
+	/***********************/
+	.navbar {
+		background-color: #7B1FA2;
+	}
+
+	.navbar-brand {
+		background-color: #7B1FA2;
+		color: #FFFFFF;
+		font-family: 'Lato', sans-serif;
+		font-weight: 400;
+	}
+
+	.navbar-brand:hover{
+		color: #FFFFFF;
+	}
+
+	/***********************/
+	/*Content*/
+	/***********************/
+	body {
+		background-color: #9C27B0;
+	}
+
+	p{
+		font-size: 14px;
+		font-family: 'Lato', sans-serif;
+		font-weight: 400;
+	}
+
+	p.address a{
+		color: #FFFFFF;
+		font-family: 'Lato', sans-serif;
+		font-weight: 400;
+	}
+
+	p.address a:hover{
+		color: #FFFFFF;
+	}
+
+	.btn, .btn-default {
+		background-color: #03A9F4;
+		color: #FFFFFF;
+		font-family: 'Lato', sans-serif;
+		font-weight: 400;
+	}
+
+	.btn:hover, .btn-default:hover {
+		background-color: #FFFFFF;
+		color: #03A9F4;
+	}
+
+	h1 {
+	    font-size: 4.75vw;
+	    font-family: 'Lato', sans-serif;
+	}
+
+	h1 a{
+		text-decoration: none;
+		color: #FFFFFF;
+		font-family: 'Lato', sans-serif;
+	}
+
+	h1 a:hover{
+		color: #FFFFFF
+	}
+
+	form div.field_with_errors label {
+		color:blue;
+		font-weight:bold;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	.mainContent {
+	 	margin-top: -15px;
+	}
+
+	/***********************/
+	/*Edit Pages*/
+	/***********************/
+	.indexPage{
+		background-color: white;
+	}
+
+	.showTable dd {
+		color: white;
+	}
+
+	.showTable dt {
+		color: white;
+	}
+
+/*******************************************/
+/*Small Width*/
+/*******************************************/
+@media (min-width: 768px) {
+
+	/***********************/
+	/*Content*/
+	/***********************/
+	h1 {
+ 	   font-size: 4vw;
+	}
+
+	p{
+		font-size: 16px;
+	}
+}
+
+/*******************************************/
+/*Medium Width*/
+/*******************************************/
+@media (min-width: 992px) {
+
+	/***********************/
+	/*Content*/
+	/***********************/
+	h1 {
+	    font-size: 4vw;
+	}
+
+	p{
+		font-size: 20px;
+		font-weight: 200;
+	}
+
+	.navbar-brand {
+		font-weight: 200;
+	}
+
+	p.address a{
+		font-weight: 400;
+	}
+
+	.btn, .btn-default {
+		font-weight: 200;
+	}
+
+	form div.field_with_errors label {
+		color:blue;
+		font-weight:bold;
+	}
+}
+
+/*******************************************/
+/*Large Width*/
+/*******************************************/
+@media (min-width: 1200px) {
+
+}
+

@@ -1,0 +1,13 @@
+<% #Selects random website from database %>
+<% @website = Website.offset(rand(Website.count)).first %>
+
+<h1><%= link_to @website.sudo_address, @website.address %></h1>
+<%= image_tag( @website.url, :class => "img-responsive" ) %>
+</br>
+<p class="description"><%= @website.description %></p>
+
+<p class="address"><%= link_to @website.address, @website.address %></p>
+</br>
+<%= link_to 'Next', root_path, :class => "btn btn-default" %>
+
+</br>

@@ -1,0 +1,30 @@
+<div class="page-header">
+  <%= link_to websites_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_website_path(@website), class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show website</h1>
+</div>
+
+<dl class="dl-horizontal showTable">
+  <dt>Name:</dt>
+  <dd><%= @website.name %></dd>
+
+  <dt>Description:</dt>
+  <dd><%= @website.description %></dd>
+
+  <dt>Address:</dt>
+  <dd><%= @website.address %></dd>
+
+  <dt>Sudo address:</dt>
+  <dd><%= @website.sudo_address %></dd>
+
+  <dt>Image:</dt>
+  <dd><%= image_tag @website.url %></dd>
+
+
+</dl>

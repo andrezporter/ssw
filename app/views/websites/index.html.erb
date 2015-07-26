@@ -1,0 +1,39 @@
+<div class="indexPage">
+  </br>
+  <%= link_to "Log In", user_session_path %>
+  </br>
+  <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
+
+  <div class="page-header">
+    <%= link_to new_website_path, class: 'btn btn-primary' do %>
+      <span class="glyphicon glyphicon-plus"></span>
+      New Website
+    <% end %>
+    <h1>Listing websites</h1>
+  </div>
+
+  <% #Website Table %>
+  <div class="table-responsive">
+    <table class="table table-striped table-bordered table-hover">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <%= content_tag_for(:tr, @websites) do |website| %>
+              <td><%= website.name %></td>
+              <td><%= website.description %></td>
+              <td><%= link_to 'Show', website %></td>
+              <td><%= link_to 'Edit', edit_website_path(website) %></td>
+              <td><%= link_to 'Destroy', website, method: :delete %></td>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
